@@ -1,0 +1,70 @@
+div.conteneur{
+	border: 1px solid black;
+    width: 85%; /* largeur de 85% de la fenêtre  */
+    max-width: 1000px; /* largeur maximale (peu importe le taille de l'écran) sera de 1000px */
+    margin: 0 auto;
+}
+header, footer{
+	background:  cadetblue;
+}
+header{
+	height:  80px;	
+}
+footer{
+	height :60px
+}
+nav{
+	background:  violet;
+	height:  50px;
+}
+section{
+	display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+div.a, div.b, div.c, div.d{
+	width:  480px;
+	height:  200px;
+}
+div.a{background:  cyan;}
+div.b{background:  tomato;}
+div.c{background:  gold;}
+div.d{background:  brown;}
+
+/* RESPONSIVE ADAPTATIF */
+/* Entre 780px et 1200px fera : le conteneur 800px et les zones a, b, c et d feront 380px */
+@media screen and (max-width: 1200px){
+
+	div.conteneur{
+		width:  750px;
+	}
+
+	div.a, div.b, div.c, div.d{
+		width: 355px;
+	}
+}
+
+/* Entre 580px et 780px fera : le conteneur 500px et les zones a, b, c et d feront 230px */
+@media screen and (max-width: 780px){
+
+	div.conteneur{
+		width:  500px;
+	}
+
+	div.a, div.b, div.c, div.d{
+		width: 230px;
+	}
+}
+
+/* Entre 0 et 580px fera : le conteneur 100% et les zones a, b, c et d feront 100% */
+@media screen and (max-width: 580px){
+
+	div.conteneur, 	div.a, div.b, div.c, div.d{
+		width:  100%;
+	}
+
+	section{
+		margin: 0;
+	}
+
+}

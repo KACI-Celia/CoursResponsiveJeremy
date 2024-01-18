@@ -1,0 +1,43 @@
+/* Documentation sur les unités 
+	https://www.w3schools.com/cssref/css_units.php
+	https://developer.mozilla.org/fr/docs/Learn/CSS/Building_blocks/Values_and_units
+*/
+
+div.conteneur{
+	width: 80%; /* largeur de 80% de la taille de la fenêtre */
+    margin: 0 auto;
+    max-width: 1000px;
+    border: 1px solid black;
+}
+header{
+	height: 10vh; /* Repesente 10% de la hauteur de la fenêtre  */
+}
+footer{
+	height: 8vh;
+}
+
+header, footer{
+	background: cadetblue;
+}
+nav{
+	background: violet;
+	height:  6vh;
+}
+
+section{
+	display: flex;
+    flex-wrap: wrap;
+    margin: 2%;
+}
+
+.a, .b, .c, .d{
+	width: 50%;
+	height: 200px;
+}
+
+div.a{background: cyan;}
+div.b{background: tomato;}
+div.c{background: gold;}
+div.d{background: brown;}
+
+

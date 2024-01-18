@@ -1,0 +1,40 @@
+div.adaptative{
+	background-color: orange;
+	padding:  10px;
+}
+
+/* MEDIA QUERIES (à mettre à la fin dans l'ordre) */
+
+/*
+	https://developer.mozilla.org/fr/docs/Web/CSS/CSS_media_queries/Using_media_queries
+	https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+*/
+
+@media screen and (min-width: 768px){
+
+	div.adaptative{
+		background: dodgerblue;
+		width:  700px;
+		margin:  0 auto;
+	}
+}
+
+@media screen and (min-width: 992px){
+
+	div.adaptative{
+		background: lightgreen;
+		width:  900px;
+		margin:  0 auto;
+	}
+}
+
+@media screen and (min-width: 1200px){
+
+	div.adaptative{
+		font-family: 'Roboto', sans-serif;
+		font-weight: bold;
+		background: tomato;
+		width:  1100px;
+		margin:  0 auto;
+	}
+}

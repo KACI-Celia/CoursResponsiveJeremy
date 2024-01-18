@@ -1,0 +1,54 @@
+body{
+	margin: 0;
+}
+.bleu, .rouge, .jaune{
+	min-height:  100px;
+}
+.bleu{background: cadetblue;}
+.rouge{background: tomato;}
+.jaune{background: gold;}
+
+.conteneur{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.col{
+	/* float: left;  permet de passer les éléments les uns à coté des autres  */
+}
+.ligne{
+	/* clear: both;   stop l'effet de flottement (float : qui entraine des problèmes d'affichage si on ne le stoppe pas) */
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.col-1 { width: 8.33333333%;}
+.col-2 { width: 16.66666667%;}
+.col-3 { width: 25%;}
+.col-4 { width: 33.33333333%;}
+.col-5 { width: 41.66666667%;}
+.col-6 { width: 50%;}
+.col-7 { width: 58.33333333%;}
+.col-8 { width: 66.66666667%;}
+.col-9 { width: 75%;}
+.col-10 { width: 83.33333333%;}
+.col-11 { width: 91.66666667%;}
+.col-12 { width: 100%;}
+
+.marge-1 { margin-left: 8.33333333%;}
+.marge-2 { margin-left: 16.66666667%;}
+.marge-3 { margin-left: 25%;}
+.marge-4 { margin-left: 33.33333333%;}
+.marge-5 { margin-left: 41.66666667%;}
+.marge-6 { margin-left: 50%;}
+.marge-7 { margin-left: 58.33333333%;}
+.marge-8 { margin-left: 66.66666667%;}
+.marge-9 { margin-left: 75%;}
+.marge-10 { margin-left: 83.33333333%;}
+.marge-11 { margin-left: 91.66666667%;}
+
+@media screen and (max-width:  768px){
+
+	.col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11,.col-12{ width: 100%;}
+
+	.marge-1,.marge-2,.marge-3,.marge-4,.marge-5,.marge-6,.marge-7,.marge-8,.marge-9,.marge-10,.marge-11{ margin-left:0;}
+}
